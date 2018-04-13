@@ -1,0 +1,21 @@
+<div ng-controller="myCtrl" class="container"> 
+
+<ul>
+    
+    <div class="row">
+    <h1>Equipo.</h1>
+		
+		Buscar por Nombre: <br><div class="col-xs-3"><input type="text" class="form-control" ng-model="searchNombre"/></div>
+	</div>
+    <div clas="row">
+			<ul>
+              
+              <li ng-repeat="x in myData|filter:{Nombre: searchNombre}|limitTo:quantity">
+              
+               <table><tr><td>{{x.Nombre}}</td></tr></table>
+                </li>
+            </ul>
+		
+	</div>
+	</ul>
+</div>

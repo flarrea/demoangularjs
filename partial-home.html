@@ -1,0 +1,35 @@
+<div class="jumbotron text-center">
+    <h1>XTREME COMPANY</h1>
+    <p>Este sitio es una demostración de <span class="text-danger">HTML, CSS, AngularJS, AYAX,un servicio REST corriendo en Google Apps Script</span> entre otras características.</p>
+    
+    <a ui-sref=".list" class="btn btn-success">Departamentos</a>
+    <a ui-sref=".paragraph" class="btn btn-success">Equipo</a>
+
+  
+  <!-- Botón para abrir modal -->
+  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Abrir Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Contenido del Modal-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Encabezado del Modal</h4>
+        </div>
+        <div class="modal-body">
+          <p>Información que se quiera incluir en el modal, puede ser texto, video, imágenes or formularios.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+    
+</div>
+
+<div ui-view></div>
